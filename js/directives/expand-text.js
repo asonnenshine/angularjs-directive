@@ -10,9 +10,9 @@ angular.module("answer", []).directive("expandText", function() {
 
 	return {
 		restrict: "A",
-		template: "<p><span>{{text}}</span><span data-ng-show='truncated'>...</span><span data-ng-hide='truncated'>{{expandedText}}</span><a href='' data-ng-show='truncated' data-ng-click='truncated=false'>{{showMoreString}}</a><a href='' data-ng-hide='truncated || disabled' data-ng-click='truncated=true'>{{showLessString}}</a></p>",
+		// NEW: Moved template HTML into a separate file
+		templateUrl: "templates/expand-text.html",
 		replace: true,
-		// NEW: Add scope variables from directive attributes
 		scope: {
 			showMoreString: "@showMoreString",
 			showLessString: "@showLessString",
