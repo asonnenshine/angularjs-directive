@@ -11,12 +11,13 @@
 			</div>
 			<div>
 				<p><b>Frosty</b> Answered... </p>
-				<p>{{text}}</p>
+				<!-- NEW: Add custom directive --> <p expand-text="">{{text}}</p>
 			</div>
 		</section>
 
 		<script src="lib/angular.js"></script>
 		<script src="js/app.js"></script>
+		<!-- NEW: Import custom directive JS --><script src="js/directives/expand-text.js"></script>
 		<script src="js/answer-ctrl.js"></script>
 
 	</body>
