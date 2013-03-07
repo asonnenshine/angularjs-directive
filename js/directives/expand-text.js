@@ -10,7 +10,6 @@ angular.module("answer", []).directive("expandText", function() {
 
 	return {
 		restrict: "A",
-		// NEW: Moved template HTML into a separate file
 		templateUrl: "templates/expand-text.html",
 		replace: true,
 		scope: {
